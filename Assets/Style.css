@@ -1,41 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
 :root{
     --bar-height:100px;
     --color-primary:#0000ff;
     --color-primary-light:#87ceeb;
+    position:fixed;
 }
 
 body{
     margin:0;
     font-family: 'Quicksand',san-serif;
-}
-
-.header{
     height:100vh;
     background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light));
+}
+
+header{
     display:flex;
     align-items: center;
-    padding-top: var(--bar-height);
+    /* padding-top: var(--bar-height); */
     box-sizing: border-box;
 }
-    .u-centered{
-        width: 100%;
-        max-width:1200px;
-        margin: 0 auto;
-        /* : border-box;padding: 16px; */
-        box-sizing
-    }
+header nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+}
+nav ul a li{
+    /* display: flex;
+    flex-direction: row; */
+    /* position: absolute; */
+    top: var(--bar-height);
+    left: 0px;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    /* height: 50px; */
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(34, 34, 34);
+}
+li{
+    font-weight: 800;
+    font-size: 30px;
+    padding:  0px 10px 0px 10px;
+    color:#ffffff; 
+    box-sizing:border-box;
+}
+
+li:hover{
+    opacity: 0.8;
+}
+.about{
+    display:flex;
+    justify-content: center;
+}
+.about img{
+    /* border-radius:50%; */
+    margin:20px;
+    padding:5px;
+    border:solid white 5px;
+}
+.about .bio{
+    margin-left:20px;
+    max-width:200px;
+}
+/* .nav */
+/* }
+.u-centered{
+    width: 100%;
+    max-width:1200px;
+    margin: 0;\i
+    border-box;padding: 16px; 
+    box-sizing:border-box;
+}
 
     .bar{
-        position: fixed;
+        position: absolute;
         z-index: 1;
         top:0;
         left:0;
-        width: 100%;
+        width:100%;
         height:var(--bar-height);
-        box-shadow: 0 0 10p rgba(0,0,0,0.15);
+        box-shadow: 0 0 1 0 
+        rgba(0,0,0,0.15);
         transition: background 0.15s;
     }
-    
+
     .bar--bg{
         background: var(--color-primary);
     }
@@ -48,7 +100,7 @@ body{
     
     .bar__logo{
      height:100%; 
-     width:25%; 
+     width:25%;
     }
     
     .bar__nav-toggle{
@@ -60,12 +112,12 @@ body{
         font-size: 2em;
         Opacity: 0.8;
     }
-    
+
     .nav{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    position:fixed;
+    position:absolute;
     top: var(--bar-height);
     left:0;
     width:100%;
@@ -75,20 +127,52 @@ body{
     box-sizing: border-box;
 }
 
-    .nav__link{
-    font-weight: 500;
-    font-size: 20px;
-    padding:  0px 10px 0px 10px;
-    text-decoration: none;
-    color:#ffffff; 
-    box-sizing:border-box;
-   
+
+    .about{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top:175px;
+    left:0;
+    width:auto;
+    height:auto;
+    padding: 20px;
+    background: #222222;
+    box-sizing: border-box;
+    }
+
+h1{
+    position:absolute;
+    border: 10 px #0000ff;
+    color: #0000ff;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px 0;
+    margin-left: 30px;
+    margin-top: -10px;
 }
 
-.nav__link:hover{
-    opacity: 0.8;
+p{
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 25px;
+    padding:50px 20px 20px 20px;
+    margin: 0px 10px;
 }
-.phil{
+
+     h2{
+    position:fixed;
+    border: 10 px #0000ff;
+    color: #0000ff;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px 0;
+    margin-left: 230px;
+    margin-top: -10px;
+} */
+
+    /* .about{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,4 +184,41 @@ body{
     padding: 10px;
     background: #222222;
     box-sizing: border-box;
-}
+} */
+
+    /* .work{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    position:fixed;
+    top:175px;
+    left:0;
+    width:auto;
+    height:auto;
+    padding: 10px;
+    background: #222222;
+    box-sizing: border-box;
+}   */
+
+    /* .contact{
+        position:fixed;
+        top:175px;
+        left:0;
+        width:auto;
+        height:auto;
+        padding: 10px;
+        background: #222222;
+        box-sizing: border-box;
+    } */
+
+        /* .resume{
+            position:fixed;
+            top:175px;
+            left:0;
+            width:auto;
+            height:auto;
+            padding: 10px;
+            background: #222222;
+            box-sizing: border-box;
+        }
+     */ 
