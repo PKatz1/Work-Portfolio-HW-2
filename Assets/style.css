@@ -119,6 +119,16 @@ footer{
     overflow: auto;
     padding:40px;
 } 
-@media screen (max-width:786px){
-max-width:50%;
+
+@media screen and (max-width: 700px){
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 40px;
+    }
+    .container flex{
+        justify-content: space-between;
+        flex-direction:column;
+}
 }
