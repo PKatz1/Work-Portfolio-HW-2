@@ -1,134 +1,124 @@
-html {
-scroll-behavior: smooth;
-}   
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-:root{
-    --bar-height:100px;
-    width:100%;
-    height:100%;
-    background-color: black;
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
 }
 
-p{
-    color:white;
+:root{
+    --primary-color: blue;
+    --secondary-color:white;
 }
 
 body{
-    margin:0;
-    font-family: 'Quicksand',san-serif;
-    height:100vh;
-    margin-right: 10px;
+    font-family: 'Share tech Mono', monospace;
+    /* color:var(--secondary-color); */
+    line-height: 1.6;
 }
 
-header{
-    display:flex;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-header nav ul{
+ul{
     list-style-type: none;
-    display:flex;
+}
+
+a{
+    text-decoration:none;
+    color:var(--secondary-color);
+} 
+
+h1{
+    font-weight: 30;
+    font-style:italic;
+    line-height: 2;
+    font-size:40px;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+    color:var(--primary-color)
+}
+
+img{
+    float:left;
+    margin:4px;
+}
+
+/*navbar styling*/
+.navbar {
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    height: 100px;
+}
+.navbar .flex{
     justify-content: space-between;
 }
 
-nav ul a li{
-    top: var(--bar-height);
-    left: 0px;
-    width: 100%;
-    font:white;
-}
-
-nav{
-    width: 100%;
-    /* height: 50px; */
-    box-sizing: border-box;
-    padding: 10px;
-    background: rgb(34, 34, 34);
-}
-
-li{
-    font-weight: 800;
-    font-size: 30px;
-    padding:  0px 10px 0px 10px;
-    color:#ffffff; 
-    box-sizing:border-box;
-}
-
-li:hover{
-    opacity: 0.8;
-}
-
-.about{
+.navbar ul{
     display:flex;
-    justify-content: left;
+    justify-content: space-between;
+    font-size: 24px;
+} 
+.navbar a{
+    display:flex;
+    justify-content: space-evenly;
+    color:var(--secondary-color);
+    padding:   15px;
+    margin:auto 0 10 px;
 }
 
-.about .pkphoto{
-margin-left:0px;
+.navbar a:hover{
+    border-bottom:2px var(--secondary-color) solid;
 }
 
-.about img{
-    /* border-radius:50%; */
-    margin:50px;
-    padding:5px;
-    border:solid white 5px;
-}
-h1{
-    color:blue;
-    font-size: 30px;
+/*utlities*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
 }
 
-.about .bio h1{
-    color:blue;
+.flex {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:100%;
 }
 
-.about .bio{    
-    margin-left:20px;
-    max-width:1200px;
-    font-size: 25px;
-    font-weight: bolder;
+h2,h3,h4,h5{
+margin-top: 10px;
+color:blue;
+font-size: 30px;
+margin-left:20px;
 }
 
-h2{
-    color:blue;
-    font-size: 30px;
+p{
+max-width:1100px;
+margin:20px;
+font-size: 20px;
+font-weight: bolder;
+color: blue;
+text-align:justify;
 }
 
-.work h2{
-    margin-left: 0px;
-    color:blue;
-}
 .work{
-    margin-left:330px;
-    max-width:1200px;
-    font-size: 25px;
-    font-weight: bolder;
+    margin-top:120px
 }
-h3{
+
+.email a{
     color:blue;
-    font-size: 30px;
-}
 
-h4{
-    color:blue;
-    font-size:30px;
 }
-
-.resume{
-    margin-left:330px;
-    max-width:1200px;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-/* .resume p{
-    margin-left:330px;
-    max-width:1200px;
-    font-size: 25px;
-    font-weight: bolder;
-} */
 footer{
     text-align:center;
     color:blue;
+    font-size: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding:40px;
+} 
+@media screen (max-width:786px){
+max-width:50%;
 }
